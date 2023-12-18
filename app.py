@@ -2119,16 +2119,16 @@ with tab8:
 
 	st.markdown("""<hr style="height:2px;border:none;color:#dedcdc;background-color:#dedcdc;" /> """, unsafe_allow_html=True)
 	col27, col28, col29, col30, col31, col32, col33, col34, col35 = st.columns([0.15,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5])
-	with col27:
-		st.empty()
-	with col28:	
-		st.metric(label="💵USD", value=round(dollar_data[-1],2), delta=round(dollar_data[-1] - dollar_data_yesterday[-1],2),delta_color="inverse")
-	with col29:	
-		st.metric(label="💷CNY", value=round(cny_data[-1],2), delta=round(cny_data[-1] - cny_data_yesterday[-1],2),delta_color="inverse")
-	with col30:	
-		st.metric(label="💴JPN", value=round(jpn_data[-1],2), delta=round(jpn_data[-1] - jpn_data_yesterday[-1],2),delta_color="inverse")
-	with col31:	
-		st.metric(label="💶EUR", value=round(eur_data[-1],2), delta=round(eur_data[-1] - eur_data_yesterday[-1],2),delta_color="inverse")
+	# with col27:
+	# 	st.empty()
+	# with col28:	
+	# 	st.metric(label="💵USD", value=round(dollar_data[-1],2), delta=round(dollar_data[-1] - dollar_data_yesterday[-1],2),delta_color="inverse")
+	# with col29:	
+	# 	st.metric(label="💷CNY", value=round(cny_data[-1],2), delta=round(cny_data[-1] - cny_data_yesterday[-1],2),delta_color="inverse")
+	# with col30:	
+	# 	st.metric(label="💴JPN", value=round(jpn_data[-1],2), delta=round(jpn_data[-1] - jpn_data_yesterday[-1],2),delta_color="inverse")
+	# with col31:	
+	# 	st.metric(label="💶EUR", value=round(eur_data[-1],2), delta=round(eur_data[-1] - eur_data_yesterday[-1],2),delta_color="inverse")
 	with col32:
 		try:
 			st.metric(label="🚜대동공업 주가", value=format(대동공업[-1],','), delta=대동공업_주식변동,delta_color="inverse")
