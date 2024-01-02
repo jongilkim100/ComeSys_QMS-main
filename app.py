@@ -1745,7 +1745,7 @@ with tab7:
 	)
 	st.plotly_chart(fig15, use_container_width=True)
 
-	현대건설기계필드클레임_2024 = pd.read_sql("SELECT * FROM 현대건설기계필드클레임_2024;",conn,index_col='index')
+	현대건설기계필드클레임_2023 = pd.read_sql("SELECT * FROM 현대건설기계필드클레임_2023;",conn,index_col='index')
 	현대건설기계필드클레임_2024 = pd.read_sql("SELECT * FROM 현대건설기계필드클레임_2024;",conn,index_col='index')
 
 	현대건설기계필드클레임_품번_1 = 현대건설기계필드클레임_2023['Request_Part_No'].drop_duplicates().sort_values().to_list()
