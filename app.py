@@ -1745,11 +1745,11 @@ with tab7:
 	)
 	st.plotly_chart(fig15, use_container_width=True)
 
-	현대건설기계필드클레임_2022 = pd.read_sql("SELECT * FROM 현대건설기계필드클레임_2023;",conn,index_col='index')
-	현대건설기계필드클레임_2024 = pd.read_sql("SELECT * FROM 현대건설기계필드클레임_2024;",conn,index_col='index')
+	현대건설기계필드클레임_2023 = pd.read_sql("SELECT * FROM 현대건설기계필드클레임_2023;",conn,index_col='index')
+	현대건설기계필드클레임_2022 = pd.read_sql("SELECT * FROM 현대건설기계필드클레임_2022;",conn,index_col='index')
 
 	현대건설기계필드클레임_품번_1 = 현대건설기계필드클레임_2022['Request_Part_No'].drop_duplicates().sort_values().to_list()
-	현대건설기계필드클레임_품번_2 = 현대건설기계필드클레임_2024['품번'].drop_duplicates().sort_values().to_list()
+	현대건설기계필드클레임_품번_2 = 현대건설기계필드클레임_2023['품번'].drop_duplicates().sort_values().to_list()
 
 	interval_time = st.slider(
 		"2️⃣현대건설기계 기간별 필드 클레임 발생",
@@ -1768,7 +1768,7 @@ with tab7:
 	현대건설기계품번_list = 현대건설기계품번_list.to_list()
 
 	현대건설기계_기간별현황_1 = 현대건설기계필드클레임_2022[현대건설기계필드클레임_2022['Confirmed_Date'].between(start_time, finish_time)]
-	현대건설기계_기간별현황_2 = 현대건설기계필드클레임_2024[현대건설기계필드클레임_2024['일자'].between(start_time, finish_time)]
+	현대건설기계_기간별현황_2 = 현대건설기계필드클레임_2023[현대건설기계필드클레임_2023['일자'].between(start_time, finish_time)]
 
 	현대건설기계_기간별현황_리스트 = []
 	for i in range(len(현대건설기계품번_list)):
