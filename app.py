@@ -1745,17 +1745,17 @@ with tab7:
 	)
 	st.plotly_chart(fig15, use_container_width=True)
 
-	현대건설기계필드클레임_2022 = pd.read_sql("SELECT * FROM 현대건설기계필드클레임_2023;",conn,index_col='index')
+	현대건설기계필드클레임_2023 = pd.read_sql("SELECT * FROM 현대건설기계필드클레임_2023;",conn,index_col='index')
 	현대건설기계필드클레임_2024 = pd.read_sql("SELECT * FROM 현대건설기계필드클레임_2024;",conn,index_col='index')
 
-	현대건설기계필드클레임_품번_1 = 현대건설기계필드클레임_2022['Request_Part_No'].drop_duplicates().sort_values().to_list()
+	현대건설기계필드클레임_품번_1 = 현대건설기계필드클레임_2023['Request_Part_No'].drop_duplicates().sort_values().to_list()
 	현대건설기계필드클레임_품번_2 = 현대건설기계필드클레임_2024['품번'].drop_duplicates().sort_values().to_list()
 
 	interval_time = st.slider(
 		"2️⃣현대건설기계 기간별 필드 클레임 발생",
-		min_value=datetime(2022, 1, 1), 
+		min_value=datetime(2023, 1, 1), 
 		max_value=datetime(2024, 12, 31),
-		value=(datetime(2022, 1,1),datetime(2024, 12, 31)),
+		value=(datetime(2023, 1,1),datetime(2024, 12, 31)),
 		format="YYYY/MM",key='slider_4')
 	start_time = interval_time[0].strftime('%Y.%m')
 	finish_time = interval_time[1].strftime('%Y.%m')
@@ -1767,7 +1767,7 @@ with tab7:
 	현대건설기계품번_list = 현대건설기계품번_list['품번'].sort_values()
 	현대건설기계품번_list = 현대건설기계품번_list.to_list()
 
-	현대건설기계_기간별현황_1 = 현대건설기계필드클레임_2022[현대건설기계필드클레임_2022['Confirmed_Date'].between(start_time, finish_time)]
+	현대건설기계_기간별현황_1 = 현대건설기계필드클레임_2023[현대건설기계필드클레임_2023['Confirmed_Date'].between(start_time, finish_time)]
 	현대건설기계_기간별현황_2 = 현대건설기계필드클레임_2024[현대건설기계필드클레임_2024['일자'].between(start_time, finish_time)]
 
 	현대건설기계_기간별현황_리스트 = []
