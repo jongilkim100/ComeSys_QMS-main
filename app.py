@@ -2619,7 +2619,7 @@ with tab3:
 
 		fig7.update_traces(texttemplate='%{text:,}')
 
-		fig7.update_layout(title_text="♊各进口检查年度现状",
+		fig7.update_layout(title_text="♊进料检验年度现况",
 							title_x = 0.4,
 							title_y = 0.82,
 							title_xanchor = "center",
@@ -2673,7 +2673,7 @@ with tab3:
     )
 		fig8.update_traces(texttemplate='%{text:,}')
 
-		fig8.update_layout(title_text="♋各工序检查年度现状",
+		fig8.update_layout(title_text="♋工序检验年度现况",
 							title_x = 0.4,
 							title_y = 0.82,
 							title_xanchor = "center",
@@ -2725,7 +2725,7 @@ with tab3:
     )
 		fig9.update_traces(texttemplate='%{text:,}')
 
-		fig9.update_layout(title_text="♋各出厂检查年度现状",
+		fig9.update_layout(title_text="♋出货检验年度现况",
 							title_x = 0.4,
 							title_y = 0.82,
 							title_xanchor = "center",
@@ -2771,7 +2771,7 @@ with tab3:
 		)
 		fig10.update_traces(texttemplate='%{text:,}')
 
-		fig10.update_layout(title_text="♍客户公司生产线不适宜各年度现状",
+		fig10.update_layout(title_text="♍客户现场不良反馈年度现况",
 							title_x = 0.4,
 							title_y = 0.82,
 							title_xanchor = "center",
@@ -2829,7 +2829,7 @@ with tab3:
 
 		fig11.update_traces(texttemplate='%{text:,}')
 
-		fig11.update_layout(title_text="♎各年度现场索赔情况",
+		fig11.update_layout(title_text="♎客户退货报废年度现况",
 							title_x = 0.4,
 							title_y = 0.82,
 							title_xanchor = "center",
@@ -2874,7 +2874,7 @@ with tab3:
 		)
 		fig12.update_traces(texttemplate='%{text:,}')
 
-		fig12.update_layout(title_text="♍昆山顾客不满现状",
+		fig12.update_layout(title_text="♍客户反馈年度现况",
 							title_x = 0.4,
 							title_y = 0.82,
 							title_xanchor = "center",
