@@ -1145,7 +1145,7 @@ st.markdown("""
 
 st.sidebar.markdown('<h1><div style="text-align: center;">😃COMESYS QMS Web App</div></h1>', unsafe_allow_html=True)
 st.sidebar.markdown('<h1><div style="text-align: center;">☀️2025년 품질 방침☀️</div></h1>', unsafe_allow_html=True)
-st.sidebar.markdown('<h2><div style="text-align: center;">🏳️‍🌈사전관리와 개선을 통한 품질완성성</div></h2>', unsafe_allow_html=True)
+st.sidebar.markdown('<h2><div style="text-align: center;">🏳️‍🌈사전관리와 개선을 통한 품질완성</div></h2>', unsafe_allow_html=True)
 st.sidebar.image("./image/1.png", width=350)
 tab0, tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10,tab11,tab12,tab13 = st.tabs(["💙🇰🇷한국본사","💛년도별품질실적", "💗🇨🇳Kunshan","💗cn各年度质量实绩","📅일자별검색","📆기간별검색","📅🇨🇳按日期搜索","📅🇨🇳按期搜索","🛰️고객사별검색","👆품목별검색","🌀클레임자료",'🌈INFORMATION','📋게시판','🎥동영상'])
 
